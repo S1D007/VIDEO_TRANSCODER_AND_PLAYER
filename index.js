@@ -6,7 +6,7 @@ const inputVideoPath = 'input.mp4';
 const outputDir = 'output/';
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 // Define the resolutions you want
 const resolutions = [
     { name: '720p' },
